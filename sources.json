@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Game Compressor",
+    "repo": "keieksof/PS5-Game-Compressor",
+    "asset": "game-compressor\\.elf$",
+    "filename": "game-compressor.elf",
+    "description": "Compress, unpack, validate and repair ShadowMountPlus-mounted games (FW 13.60 + SMP 1.7)",
+    "category": "Utilities & Tools"
+  }
+]

@@ -17,9 +17,12 @@ jobs:
       - name: Get Game Compressor Details
         id: fetch_compressor
         run: |
+          # Querying the list of releases to safely bypass missing "latest" tags
           API_DATA=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://github.com)
-          VERSION_TAG=$(echo "$API_DATA" | jq -r '.tag_name')
-          DOWNLOAD_LINK=$(echo "$API_DATA" | jq -r '.assets[] | select(.name == "game-compressor.elf") | .browser_download_url')
+          
+          # Safely pull the top index tag and asset link
+          VERSION_TAG=$(echo "$API_DATA" | jq -r '.[0].tag_name')
+          DOWNLOAD_LINK=$(echo "$API_DATA" | jq -r '.[0].assets[] | select(.name == "game-compressor.elf") | .browser_download_url')
           
           echo "COMP_VER=${VERSION_TAG}" >> $GITHUB_ENV
           echo "COMP_URL=${DOWNLOAD_LINK}" >> $GITHUB_ENV

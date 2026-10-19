@@ -1,0 +1,16 @@
+{
+  "name": "H's Payloads",
+  "payloads": [
+    {
+      "name": "Game Compressor",
+      "filename": "game-compressor.elf",
+      "url": "https://github.com/keieksof/PS5-Game-Compressor/releases/download/v1.1.5-smp17/game-compressor.elf",
+      "description": "Compress, unpack, validate and repair ShadowMountPlus-mounted games (FW 13.60 + SMP 1.7)",
+      "version": "v1.1.5-smp17",
+      "category": "Utilities & Tools",
+      "checksum": "9bfc8841fe75eff09e1d36148a4305ebb37a64c7b833b0fc616f2ff8efd0ba9e",
+      "source": "https://github.com/keieksof/PS5-Game-Compressor/releases",
+      "last_update": "2026-10-18"
+    }
+  ]
+}

@@ -4,7 +4,7 @@ import os
 import re
 import urllib.request
 
-REPO_NAME = "H's Payloads"
+REPO_NAME = "Haroon Payloads"
 TOKEN = os.environ.get("GITHUB_TOKEN")
 
 

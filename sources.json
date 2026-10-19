@@ -6,5 +6,13 @@
     "filename": "game-compressor.elf",
     "description": "Compress, unpack, validate and repair ShadowMountPlus-mounted games (FW 13.60 + SMP 1.7)",
     "category": "Utilities & Tools"
+  },
+  {
+    "name": "ProsperoMgr",
+    "repo": "notmaj0r/ProsperoMgr",
+    "asset": "ProsperoMgr\\.elf$",
+    "filename": "ProsperoMgr.elf",
+    "description": "All-in-one manager for your PS5",
+    "category": "Utilities & Tools"
   }
 ]

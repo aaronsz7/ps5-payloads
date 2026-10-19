@@ -2,7 +2,7 @@ name: Automated PS5 Payload Hub
 on:
   schedule:
     - cron: '0 */6 * * *' # Automatically checks for updates every 6 hours
-  workflow_dispatch: # Gives you a manual manual run button
+  workflow_dispatch: # Manual run button
 
 jobs:
   sync-payloads:
@@ -17,7 +17,7 @@ jobs:
       - name: Get Game Compressor Details
         id: fetch_compressor
         run: |
-          API_DATA=$(curl -s https://github.com)
+          API_DATA=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://github.com)
           VERSION_TAG=$(echo "$API_DATA" | jq -r '.tag_name')
           DOWNLOAD_LINK=$(echo "$API_DATA" | jq -r '.assets[] | select(.name == "game-compressor.elf") | .browser_download_url')
           

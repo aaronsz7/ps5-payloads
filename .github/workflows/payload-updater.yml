@@ -2,7 +2,7 @@ name: Automated PS5 Payload Hub
 on:
   schedule:
     - cron: '0 */6 * * *' # Automatically checks for updates every 6 hours
-  workflow_dispatch: # Gives you a manual "Run" button to use anytime
+  workflow_dispatch: # Gives you a manual manual run button
 
 jobs:
   sync-payloads:
@@ -21,15 +21,15 @@ jobs:
           VERSION_TAG=$(echo "$API_DATA" | jq -r '.tag_name')
           DOWNLOAD_LINK=$(echo "$API_DATA" | jq -r '.assets[] | select(.name == "game-compressor.elf") | .browser_download_url')
           
-          echo "COMP_VER=$VERSION_TAG" >> $GITHUB_ENV
-          echo "COMP_URL=$DOWNLOAD_LINK" >> $GITHUB_ENV
+          echo "COMP_VER=${VERSION_TAG}" >> $GITHUB_ENV
+          echo "COMP_URL=${DOWNLOAD_LINK}" >> $GITHUB_ENV
 
       # ========================================================
       # 2. GENERATING YOUR TARGET JSON FILE
       # ========================================================
       - name: Compile Payloads Database
         run: |
-          cat <<EOF > payloads.json
+          cat << 'EOF' > payloads.json
           {
             "payloads": [
               {

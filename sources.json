@@ -14,5 +14,13 @@
     "filename": "ProsperoMgr.elf",
     "description": "All-in-one manager for your PS5",
     "category": "Utilities & Tools"
+  },
+    {
+    "name": "TabShifter",
+    "repo": "xvvulcanvx/PS5-TabShifter",
+    "asset": "\\.elf$",
+    "filename": "TabShifter.elf",
+    "description": "Move apps between the Games and Media tabs and hide offline PSN bloatware (FW 12.xx-13.60)",
+    "category": "Utilities & Tools"
   }
 ]

@@ -22,6 +22,17 @@
       "checksum": "e7a6bb544adb2fb2a61aa9cc83b0ad15f70b32d7511a3de0f1fb88812f11983c",
       "source": "https://github.com/notmaj0r/ProsperoMgr/releases",
       "last_update": "2026-09-28"
+    },
+    {
+      "name": "TabShifter",
+      "filename": "TabShifter.elf",
+      "url": "https://github.com/xvvulcanvx/PS5-TabShifter/releases/download/v.1.2.1/TabShifter.elf",
+      "description": "Move apps between the Games and Media tabs and hide offline PSN bloatware (FW 12.xx-13.60)",
+      "version": "v.1.2.1",
+      "category": "Utilities & Tools",
+      "checksum": "147945cffb28405557a49cd4929c7d0534c55f6a757aba0063f9ce475c1c7255",
+      "source": "https://github.com/xvvulcanvx/PS5-TabShifter/releases",
+      "last_update": "2026-10-16"
     }
   ]
 }

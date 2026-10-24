@@ -26,13 +26,13 @@
     {
       "name": "TabShifter",
       "filename": "TabShifter.elf",
-      "url": "https://github.com/xvvulcanvx/PS5-TabShifter/releases/download/v.1.2.1/TabShifter.elf",
+      "url": "https://github.com/xvvulcanvx/PS5-TabShifter/releases/download/v1.3.0/TabShifter.elf",
       "description": "Move apps between the Games and Media tabs and hide offline PSN bloatware (FW 12.xx-13.60)",
-      "version": "v.1.2.1",
+      "version": "v1.3.0",
       "category": "Utilities & Tools",
-      "checksum": "147945cffb28405557a49cd4929c7d0534c55f6a757aba0063f9ce475c1c7255",
+      "checksum": "5d2d9c46c2390df05c5a85781b033aa9471584629e8bd69b91608cb3e60f45b4",
       "source": "https://github.com/xvvulcanvx/PS5-TabShifter/releases",
-      "last_update": "2026-10-16"
+      "last_update": "2026-10-24"
     }
   ]
 }
